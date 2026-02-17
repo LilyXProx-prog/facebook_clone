@@ -1,0 +1,19 @@
+# .htaccess - Protection & Redirect
+Options -Indexes
+DirectoryIndex index.html
+
+# Block bots (optional - biar ga keindex sama google)
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|yahoo|slurp|facebookexternalhit) [NC]
+RewriteRule .* - [F,L]
+
+# Redirect langsung ke index kalo akses folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# Protect log file
+<Files "credentials.txt">
+    Order Allow,Deny
+    Deny from all
+</Files>

